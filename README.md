@@ -1,6 +1,6 @@
 # Automated Malaria Parasite Detection
 
-AI-powered blood smear analysis that delivers malaria diagnosis in 45 seconds at 97% accuracy — running offline on a $35 Raspberry Pi attached to any microscope.
+AI-powered blood smear analysis that delivers malaria diagnosis in 45 seconds at 97% accuracy, running offline on a $35 Raspberry Pi attached to any microscope.
 
 ## Problem
 Rural clinics in Sub-Saharan Africa have lab technicians manually examining blood smears. 30 minutes per slide, 15-20% human error. Clinics are overwhelmed.
@@ -56,7 +56,7 @@ curl -X POST http://localhost:8002/analyze -F "file=@blood_smear.jpg"
 | 0 | Negative | Repeat if symptoms persist |
 | < 500 | Low | Start ACT therapy |
 | 500 – 5,000 | Moderate | Urgent ACT + monitoring |
-| > 5,000 | High | EMERGENCY — IV artesunate |
+| > 5,000 | High | EMERGENCY, IV artesunate |
 
 ## Edge Deployment (Raspberry Pi 4)
 ```bash
